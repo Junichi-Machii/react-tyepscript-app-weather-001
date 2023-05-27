@@ -7,11 +7,9 @@ import { useState } from "react";
 const Form = () => {
 
   const [ city, setCity ]  = useState<string>("");
-  const getWeather = (e: any) => {
-    e.preventDefault();
+  const getWeather = (e) => {
     fetch("http://api.weatherapi.com/v1/current.json?key=c1c9c437aa154a06b2b14007231505&q=London&aqi=no")
-    .then(res => res.json() )
-    .then(data => console.log(data))
+    .then(res => console.log(res) )
    }
   return (
     <form action="">

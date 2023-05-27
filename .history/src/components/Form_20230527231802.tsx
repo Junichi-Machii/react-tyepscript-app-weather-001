@@ -11,7 +11,7 @@ const Form = () => {
     e.preventDefault();
     fetch("http://api.weatherapi.com/v1/current.json?key=c1c9c437aa154a06b2b14007231505&q=London&aqi=no")
     .then(res => res.json() )
-    .then(data => console.log(data))
+    .then(data => consol)
    }
   return (
     <form action="">
