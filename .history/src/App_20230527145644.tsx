@@ -1,11 +1,10 @@
 
-import Title from './components/Title';
 import './App.css';
 
 function App() {
   return (
-    <div className="test">
-      <Title />
+    <div className="App">
+ 1
     </div>
   );
 }

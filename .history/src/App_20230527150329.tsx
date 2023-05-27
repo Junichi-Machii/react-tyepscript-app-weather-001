@@ -1,11 +1,12 @@
 
-import Title from './components/Title';
 import './App.css';
+import Title from './components/Title';
 
 function App() {
   return (
     <div className="test">
-      <Title />
+      <h1>hi!"Hello</h1>
+      <Title /
     </div>
   );
 }
