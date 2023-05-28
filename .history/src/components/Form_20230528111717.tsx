@@ -13,7 +13,7 @@ const Form = (props: FormPropsType) => {
   return (
     <form action="">
       <input type="text" name='city' placeholder='都市名' onChange={e => props.setCity(e.target.value)} />
-     
+      {props.city}
    
       <button type='submit' onClick={props.getWeather}>天気を知る</button>
     </form>

@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="test">
       <Title />
-      <Form setCity={setCity} getWeather={getWeather} />
+      <Form setCity={strCt} />
       <Results />
     </div>
   );
