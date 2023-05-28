@@ -3,7 +3,7 @@ import Title from './components/Title';
 import Form from './components/Form';
 import Results from './components/Results';
 
-import { useState } from "react";
+
 
 
 import './App.css';
@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="test">
       <Title />
-      <Form setCity={setCity} getWeather={getWeather} />
+      <Form />
       <Results />
     </div>
   );
