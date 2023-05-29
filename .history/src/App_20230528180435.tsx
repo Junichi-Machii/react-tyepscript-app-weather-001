@@ -37,9 +37,10 @@ function App() {
       setResults({
         country:data.location.country ,
         cityName: data.location.name,
-        temperature:data.current.condition.temp_c,
-        conditionText:data.current.condition.text ,
-        icon: data.current.condition.icon,
+        temperature:data.condition
+        .temp_c,
+        conditionText:data.condition.text ,
+        icon: data.condition.icon,
       });
     })
    }
@@ -50,7 +51,7 @@ function App() {
     <div className="test">
       <Title />
       <Form setCity={setCity} getWeather={getWeather} />
-      <Results results={results}/>
+      <Results results={result}/>
     </div>
   );
 }

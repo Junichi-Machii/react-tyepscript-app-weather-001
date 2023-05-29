@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="test">
-      <Title />
+      <Title city={city} />
       <Form setCity={setCity} getWeather={getWeather} />
       <Results results={results}/>
     </div>
