@@ -37,7 +37,7 @@ function App() {
       setResults({
         country:data.location.country ,
         cityName: data.location.name,
-        temperature:data.current.temp_c,
+        temperature:data.current.condition.temp_c,
         conditionText:data.current.condition.text ,
         icon: data.current.condition.icon,
       });
