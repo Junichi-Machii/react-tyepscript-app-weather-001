@@ -13,7 +13,7 @@ type ResultsPropsType = {
 
 const Results = (props: ResultsPropsType) => {
   return (
-    <h1 className="">気象データ {props.results.country}</h1>
+    <h1 className="">気象データ {props.r}</h1>
   )
 }
 

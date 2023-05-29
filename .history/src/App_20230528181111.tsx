@@ -39,7 +39,7 @@ function App() {
         cityName: data.location.name,
         temperature:data.current.condition.temp_c,
         conditionText:data.current.condition.text ,
-        icon: data.current.condition.icon,
+        icon: data.currentcondition.icon,
       });
     })
    }

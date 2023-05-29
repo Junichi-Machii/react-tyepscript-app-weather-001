@@ -7,14 +7,13 @@ import { useState } from "react";
 
 
 import './App.css';
-import { response } from 'express';
 
 type ResultsStateType = {
   country: string;
   cityName: string;
-  temperature: string; 
-  conditionText: string;
-  icon: string;
+  temperature: string, 
+  conditionText: string,
+  icon: string
 }
 
 function App() {
@@ -32,15 +31,15 @@ function App() {
   const getWeather = (e: any) => {
     e.preventDefault();
     fetch("http://api.weatherapi.com/v1/current.json?key=c1c9c437aa154a06b2b14007231505&q=London&aqi=no")
-    .then(response => response.json() )
+    .then(res => res.json() )
     .then(data => {console.log(data)
-      setResults({
-        country:data.location.country ,
-        cityName: data.location.name,
-        temperature:data.current.condition.temp_c,
-        conditionText:data.current.condition.text ,
-        icon: data.current.condition.icon,
-      });
+      // setResults({
+      //   country:data.location.country ,
+      //   cityName: data.location.name,
+      //   temperature:data, 
+      //   conditionText:data ,
+      //   icon: data,
+      // });
     })
    }
 
@@ -50,7 +49,7 @@ function App() {
     <div className="test">
       <Title />
       <Form setCity={setCity} getWeather={getWeather} />
-      <Results results={results}/>
+      <Results />
     </div>
   );
 }
