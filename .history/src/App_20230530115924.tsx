@@ -31,7 +31,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     fetch(
-      `https://api.weatherapi.com/v1/current.json?key=c1c9c437aa154a06b2b14007231505&q=${city}&aqi=no
+      `https://api.weatherapi.com/v1/current.json?key=c1c9c437aa154a06b2b14007231505&q=London&aqi=no
       `
     )
       .then((response) => response.json())
